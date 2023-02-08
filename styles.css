@@ -657,6 +657,8 @@ display: none;
     right: 0;
 text-align: center;
 z-index: -999999;
+
+overflow-x: hidden;
 }
 
 .anchors__menu{
@@ -668,6 +670,7 @@ z-index: -999999;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 .close__menu{
     position: absolute;
@@ -683,11 +686,13 @@ z-index: -999999;
 }
 
 .showmenu{
+    overflow-x: hidden;
     display: flex;
     opacity: 1;
     z-index: 12;
     animation: animation_left 2s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes animation_left {
@@ -868,10 +873,17 @@ Responsive
     
 }
 @media (max-width:375px){
+    *{
+        overflow-x: hidden;
+    }
+    .text{
+        font-size: 28px;
+    }
     .anchors{
         display: none;
     }
     .show__menu{
+
         display: inline;
     }
     .about__me{

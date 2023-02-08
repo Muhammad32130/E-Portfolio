@@ -35,13 +35,13 @@ function contact(event){
 
 
 }
-// const menu = document.querySelector(' .anchor__contain')
-// function showMenuonClick(){
-//     menu.classList += " showmenu"
-// }
-// function closemenu(){
-//     menu.classList.remove("showmenu")
-// }
+const menu = document.querySelector(' .anchor__contain')
+function showMenuonClick(){
+    menu.classList += " showmenu"
+}
+function closemenu(){
+    menu.classList.remove("showmenu")
+}
     
     
     

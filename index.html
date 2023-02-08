@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="./index.js" defer></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("afAh1yi6uFuDhPzP1");
+   })();
+</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Portfolio</title>
+  </head>
+  <body>
+    <section id="main__page">
+      <div class="main__contain">
+        <nav class="nav__bar">
+          <div class="logo__wrapper">
+            <img
+              src="./ma-low-resolution-logo-black-on-transparent-background.png"
+              alt=""
+              class="logo"
+            />
+          </div>
+          <ul class="ul">
+            <li class="anchor__links"><a class="anchors" href="#">Home</a></li>
+            <li class="anchor__links"><a class="anchors" onclick="showInfo()"  href="#">About</a></li>
+            <li class="anchor__links">
+              <a class="anchors" href="#projects">Projects</a>
+            </li>
+            <li class="anchor__links">
+              <a class="anchors" href="#" onclick="showInfo()">Contact</a>
+            </li>
+            <button class="show__menu" onclick="showMenuonClick()">
+              <svg class="menu__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+            <div class="anchor__contain">
+              <div class="anchors__menu">
+                <button class="close__menu" onclick="closemenu()">
+                  <svg class="menu__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+                </button>
+                <a class="menu__links" href="">Home</a>
+                <a class="menu__links" href="#" onclick="showInfo()">About</a>
+                <a class="menu__links" href="#" onclick="showInfo()">Contact</a>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="contain">
+        <div class="row">
+          <div class="text__row">
+            <h4 class="text">
+              Hi, I'm <br />
+              <span class="green">Muhammad</span>.
+            </h4>
+            <p class="para">
+              My name is Muhammad Askari and I'm on my path to become a
+              <span class="green">Frontend Sofware Engineer.</span> I'm
+              dedicated and ready to start working at your company and excel at
+              all tasks. I'm an excellent learner and I truly enjoy learning.
+              Please take a look at my projects and contact me.
+            </p>
+          </div>
+          <div class="img__row">
+            <img class="img__2" src="https://cdn.dribbble.com/users/1025838/screenshots/6220885/devguy3.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <button class="mouse">
+        <a href="#projects">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M0 192H176V0H160C71.6 0 0 71.6 0 160v32zm0 32V352c0 88.4 71.6 160 160 160h64c88.4 0 160-71.6 160-160V224H192 0zm384-32V160C384 71.6 312.4 0 224 0H208V192H384z"
+            />
+          </svg>
+        </a>
+      </button>
+      <div class="scroll"></div>
+    </section>
+    <section id="languages">
+      <div class="text__wrapper">
+        <h2 class="title__text">Languages I'm familiar with</h2>
+        <div class="language__wrap">
+          <figure class="language__fig">
+            <img
+              class="language__img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt=""
+            />
+            <h6 class="language__name">HTML 5</h6>
+          </figure>
+          <figure class="language__fig">
+            <img
+              class="language__img"
+              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt=""
+            />
+            <h6 class="language__name">CSS</h6>
+          </figure>
+          <figure class="language__fig">
+            <img
+              class="language__img"
+              src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt=""
+            />
+            <h6 class="language__name">JavaScript</h6>
+          </figure>
+          <figure class="language__fig">
+            <img
+              class="language__img"
+              src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt=""
+            />
+            <h6 class="language__name">React</h6>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="section__title">Projects</h1>
+      <li class="project">
+        <div class="project__wrapper">
+          <figure class="fig__img">
+            <img class="project__img" src="./movies.png" alt="" />
+          </figure>
+          <div class="project__text--wrapper">
+            <div class="project__contain">
+              <h2 class="project__title">E-commerce</h2>
+              <p class="project__para">
+                This project was designed and made by Muhammad Askari. It is a
+                website that provides information about movies from backend
+                APIs. It has two filters filters and a search bar. Everything
+                has been made dynamically in JavaScript to minimize the code.
+                Check out the project through the link.
+              </p>
+              <span class="handspin">👇</span>
+              <div class="links__wrap">
+                <a class="hoover__link" href="https://github.com" target="_blank"><svg class="hoover__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg></a>
+                <a class="hoover__link" href="#"><svg  class="hoover__svg hoover__svg--link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg></a>
+                <a class="hoover__link" href="https://linkedin.com" target="_blank"><svg class="hoover__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </section>
+    <div class="btn__wrap">
+      <button id="contact__btn" onclick="showInfo()">
+        </a>
+        <svg class="svg__contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+      </button>
+    </div>
+    <div class="card__contain">
+      <div class="info__card">
+        <div class="info__wrapper">
+        <div class="about__me">
+          <h2 class="about__title">
+            About Me
+          </h2>
+          <p class="about__para">I'm originally from Pakistan and I came to this country in 2014. Ever since then I fell in love with computers and coding. I have taken classes in High School as well as college to learn coding, although I prefer learning by myself. I really enjoy coding and the best part about it is that you always need to learn more which I really enjoy. Contact me and give me an oppurtunity to make your company better.</p>
+        </div>
+      </div>
+      <div class="contact__form" onsubmit="contact(event)">
+        <div class="loading">
+          <svg class="loading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg>
+        </div>
+        <div class="success"><h5 class="thank__message">Thanks for your message! I'll be in contact with you soon.</h5></div>
+        <form class="form" action="">
+          <h6 class="name1">E-mail:</h6><input class="email" name ="user_email" type="E-mail" placeholder="Email" required></input>
+          <h6 class="name1">Name:</h6><input class="name" name="user_name" type="text" placeholder="Name" required></input>
+          <h6 class="name1">Message:</h6><textarea class="message" name="message" id="text__id" cols="3" rows="5" required></textarea>
+          <button class="send__btn">Send</button>
+        </form>
+        <button class="close__btn" onclick="closeInfo()">
+          <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <section id="footer">
+    <div class="footer__contain">
+<div class="footer__row">
+  <div class="footer__texts">
+    <h2 class="footer__text">Made and Designed By Muhammad Askari</h2>
+    <div class="text__links">
+      <h6><a class="text__link" href="#main__page">Home</a></h6>
+      <h6><a class="text__link" onclick="showInfo()" href="#">About</a></h6>
+      <h6><a class="text__link" onclick="showInfo()" href="#">Contact</a></h6>
+    </div>
+  </div>
+  <div class="footer__links">
+    <a class="footer__link" href="https://github.com" target="_blank"><svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg></a>
+    <a class="footer__link" href="#"><svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"/></svg></a>
+    <a class="footer__link" href="https://linkedin.com" target="_blank"><svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+  </div>
+</div>
+    </div>
+
+  </section>
+  </body>
+</html>

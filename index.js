@@ -4,7 +4,6 @@
 
 
 function showInfo(){
-    
     document.body.classList+=(' open--card')
 }
 function closeInfo(){
@@ -43,7 +42,6 @@ function contact(event){
 // function closemenu(){
 //     menu.classList.remove("showmenu")
 // }
-    
     
     
     

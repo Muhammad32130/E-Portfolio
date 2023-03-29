@@ -48,6 +48,37 @@ function closemenu(){
     window.addEventListener('scroll',
     ()=>{
         const project = document.querySelector('.project')
+        console.log(project)
+        let contentposition = project.getBoundingClientRect().top
+        let screenPosition = window.innerHeight 
+
+        if(contentposition<screenPosition){
+            project.classList.add('show__project')
+        }
+        else{
+            project.classList.remove('show__project')
+        }
+    }
+    )
+    window.addEventListener('scroll',
+    ()=>{
+        const project = document.querySelector('.two_project')
+        console.log(project)
+        let contentposition = project.getBoundingClientRect().top
+        let screenPosition = window.innerHeight 
+
+        if(contentposition<screenPosition){
+            project.classList.add('show__project')
+        }
+        else{
+            project.classList.remove('show__project')
+        }
+    }
+    )
+    window.addEventListener('scroll',
+    ()=>{
+        const project = document.querySelector('.three_project')
+        console.log(project)
         let contentposition = project.getBoundingClientRect().top
         let screenPosition = window.innerHeight 
 

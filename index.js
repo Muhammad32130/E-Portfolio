@@ -55,9 +55,7 @@ function closemenu(){
         if(contentposition<screenPosition){
             project.classList.add('show__project')
         }
-        else{
-            project.classList.remove('show__project')
-        }
+    
     }
     )
     window.addEventListener('scroll',
@@ -70,9 +68,7 @@ function closemenu(){
         if(contentposition<screenPosition){
             project.classList.add('show__project')
         }
-        else{
-            project.classList.remove('show__project')
-        }
+    
     }
     )
     window.addEventListener('scroll',
@@ -84,9 +80,6 @@ function closemenu(){
 
         if(contentposition<screenPosition){
             project.classList.add('show__project')
-        }
-        else{
-            project.classList.remove('show__project')
         }
     }
     )

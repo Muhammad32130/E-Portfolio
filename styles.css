@@ -245,6 +245,9 @@ Projects
 .two_project{
     transform: translateX(-100%);
 }
+.four_project{
+    transform: translateX(-100%);
+}
 .show__project{
     overflow-x: hidden;
     transition: 2s all ease;

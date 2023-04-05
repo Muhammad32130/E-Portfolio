@@ -83,6 +83,18 @@ function closemenu(){
         }
     }
     )
+    window.addEventListener('scroll',
+    ()=>{
+        const project = document.querySelector('.four_project')
+        console.log(project)
+        let contentposition = project.getBoundingClientRect().top
+        let screenPosition = window.innerHeight 
+
+        if(contentposition<screenPosition){
+            project.classList.add('show__project')
+        }
+    }
+    )
     
     
 
